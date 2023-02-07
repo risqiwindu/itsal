@@ -24,12 +24,12 @@ $status_wise_courses = $this->crud_model->get_status_wise_courses();
 					<span><?php echo get_phrase('dashboard'); ?></span>
 				</a>
 			</li>
-			<li class="side-nav-item">
+			<!-- <li class="side-nav-item">
 				<a href="<?php echo site_url('user/courses'); ?>" class="side-nav-link <?php if ($page_name == 'courses' || $page_name == 'course_add' || $page_name == 'course_edit') echo 'active'; ?>">
 					<i class="dripicons-archive"></i>
 					<span><?php echo get_phrase('course_manager'); ?></span>
 				</a>
-			</li>
+			</li> -->
 			<!-- <li class="side-nav-item">
 				<a href="<?php echo site_url('user/sales_report'); ?>" class="side-nav-link <?php if ($page_name == 'report' || $page_name == 'invoice') echo 'active'; ?>">
 					<i class="dripicons-to-do"></i>

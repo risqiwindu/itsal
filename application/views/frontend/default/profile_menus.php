@@ -12,7 +12,7 @@
 
                   <!-- <li class="<?php if($page_name == 'my_wishlist') echo 'active'; ?>"><a href="<?php echo site_url('home/my_wishlist'); ?>"><?php echo site_phrase('wishlists'); ?></a></li> -->
 
-                  <li class="<?php if($page_name == 'my_messages') echo 'active'; ?>"><a href="<?php echo site_url('home/my_messages'); ?>"><?php echo site_phrase('messages'); ?></a></li>
+                  <!-- <li class="<?php if($page_name == 'my_messages') echo 'active'; ?>"><a href="<?php echo site_url('home/my_messages'); ?>"><?php echo site_phrase('messages'); ?></a></li> -->
 
                   <!-- <li class="<?php if($page_name == 'purchase_history' || $page_name == 'invoice') echo 'active'; ?>"><a href="<?php echo site_url('home/purchase_history'); ?>"><?php echo site_phrase('purchase_history'); ?></a></li> -->
 
