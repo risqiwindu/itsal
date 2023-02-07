@@ -25,7 +25,7 @@ $status_wise_courses = $this->crud_model->get_status_wise_courses();
 			</a>
 		</li>
 
-		<?php if (has_permission('course')) : ?>
+		<!-- <?php if (has_permission('course')) : ?>
 			<li class="side-nav-item <?php if ($page_name == 'courses' || $page_name == 'course_add' || $page_name == 'course_edit' || $page_name == 'categories' || $page_name == 'category_add' || $page_name == 'category_edit' || $page_name == 'coupons' || $page_name == 'coupon_add' || $page_name == 'coupon_edit' || $page_name == 'add_bundle' || $page_name == 'manage_course_bundle' || $page_name == 'edit_bundle' || $page_name == 'active_bundle_subscription_report' || $page_name == 'expire_bundle_subscription_report' || $page_name == 'bundle_invoice') echo 'active'; ?>">
 				<a href="javascript: void(0);" class="side-nav-link <?php if ($page_name == 'courses' || $page_name == 'course_add' || $page_name == 'course_edit' || $page_name == 'categories' || $page_name == 'category_add' || $page_name == 'category_edit' || $page_name == 'coupons' || $page_name == 'coupon_add' || $page_name == 'coupon_edit') : ?> active <?php endif; ?>">
 					<i class="dripicons-archive"></i>
@@ -50,13 +50,13 @@ $status_wise_courses = $this->crud_model->get_status_wise_courses();
 							<a href="<?php echo site_url('admin/categories'); ?>"><?php echo get_phrase('course_category'); ?></a>
 						</li>
 					<?php endif; ?>
-					<!-- <?php if (has_permission('coupon')) : ?>
+					<?php if (has_permission('coupon')) : ?>
 						<li class="<?php if ($page_name == 'coupons' || $page_name == 'coupon_add' || $page_name == 'coupon_edit') echo 'active'; ?>">
 							<a href="<?php echo site_url('admin/coupons'); ?>">
 								<?php echo get_phrase('coupons'); ?>
 							</a>
 						</li>
-					<?php endif; ?> -->
+					<?php endif; ?>
 
 					<?php if (addon_status('course_bundle')) : ?>
 						<li class="side-nav-item">
@@ -78,9 +78,9 @@ $status_wise_courses = $this->crud_model->get_status_wise_courses();
 					<?php endif; ?>
 				</ul>
 			</li>
-		<?php endif; ?>
+		<?php endif; ?> -->
 
-		<?php if (has_permission('enrolment')) : ?>
+		<!-- <?php if (has_permission('enrolment')) : ?>
 			<li class="side-nav-item <?php if ($page_name == 'enrol_history' || $page_name == 'enrol_student') : ?> active <?php endif; ?>">
 				<a href="javascript: void(0);" class="side-nav-link <?php if ($page_name == 'enrol_history' || $page_name == 'enrol_student') : ?> active <?php endif; ?>">
 					<i class="dripicons-network-3"></i>
@@ -97,7 +97,7 @@ $status_wise_courses = $this->crud_model->get_status_wise_courses();
 					</li>
 				</ul>
 			</li>
-		<?php endif; ?>
+		<?php endif; ?> -->
 
 		<!-- <?php if (has_permission('revenue')) : ?>
 			<li class="side-nav-item">
