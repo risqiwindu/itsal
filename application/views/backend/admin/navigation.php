@@ -50,13 +50,13 @@ $status_wise_courses = $this->crud_model->get_status_wise_courses();
 							<a href="<?php echo site_url('admin/categories'); ?>"><?php echo get_phrase('course_category'); ?></a>
 						</li>
 					<?php endif; ?>
-					<?php if (has_permission('coupon')) : ?>
+					<!-- <?php if (has_permission('coupon')) : ?>
 						<li class="<?php if ($page_name == 'coupons' || $page_name == 'coupon_add' || $page_name == 'coupon_edit') echo 'active'; ?>">
 							<a href="<?php echo site_url('admin/coupons'); ?>">
 								<?php echo get_phrase('coupons'); ?>
 							</a>
 						</li>
-					<?php endif; ?>
+					<?php endif; ?> -->
 
 					<?php if (addon_status('course_bundle')) : ?>
 						<li class="side-nav-item">
@@ -99,7 +99,7 @@ $status_wise_courses = $this->crud_model->get_status_wise_courses();
 			</li>
 		<?php endif; ?>
 
-		<?php if (has_permission('revenue')) : ?>
+		<!-- <?php if (has_permission('revenue')) : ?>
 			<li class="side-nav-item">
 				<a href="javascript: void(0);" class="side-nav-link <?php if ($page_name == 'admin_revenue' || $page_name == 'instructor_revenue' || $page_name == 'invoice') : ?> active <?php endif; ?>">
 					<i class="dripicons-box"></i>
@@ -117,7 +117,7 @@ $status_wise_courses = $this->crud_model->get_status_wise_courses();
 					<?php endif; ?>
 				</ul>
 			</li>
-		<?php endif; ?>
+		<?php endif; ?> -->
 
 		<?php if (has_permission('user')) : ?>
 			<li class="side-nav-item <?php if ($page_name == 'admins' || $page_name == 'admin_add' || $page_name == 'admin_edit' || $page_name == 'admin_permission' || $page_name == 'instructors' || $page_name == 'instructor_add' || $page_name == 'instructor_edit' || $page_name == 'instructor_payout' || $page_name == 'instructor_settings' || $page_name == 'application_list' || $page_name == 'users' || $page_name == 'user_add' || $page_name == 'user_edit') : ?> active <?php endif; ?>">
@@ -156,21 +156,21 @@ $status_wise_courses = $this->crud_model->get_status_wise_courses();
 								<li class="<?php if ($page_name == 'instructor_add') echo 'active'; ?>">
 									<a href="<?php echo site_url('admin/instructor_form/add_instructor_form'); ?>"><?php echo get_phrase('add_new_instructor'); ?></a>
 								</li>
-								<li class="<?php if ($page_name == 'instructor_payout') echo 'active'; ?>">
+								<!-- <li class="<?php if ($page_name == 'instructor_payout') echo 'active'; ?>">
 									<a href="<?php echo site_url('admin/instructor_payout'); ?>">
 										<?php echo get_phrase('instructor_payout'); ?>
 										<span class="badge badge-danger-lighten"><?php echo $this->crud_model->get_pending_payouts()->num_rows(); ?></span>
 									</a>
-								</li>
-								<li class="<?php if ($page_name == 'instructor_settings') echo 'active'; ?>">
+								</li> -->
+								<!-- <li class="<?php if ($page_name == 'instructor_settings') echo 'active'; ?>">
 									<a href="<?php echo site_url('admin/instructor_settings'); ?>"><?php echo get_phrase('instructor_settings'); ?></a>
-								</li>
-								<li class="<?php if ($page_name == 'application_list') echo 'active'; ?>">
+								</li> -->
+								<!-- <li class="<?php if ($page_name == 'application_list') echo 'active'; ?>">
 									<a href="<?php echo site_url('admin/instructor_application'); ?>">
 										<?php echo get_phrase('applications'); ?>
 										<span class="badge badge-danger-lighten"><?php echo $this->user_model->get_pending_applications()->num_rows(); ?></span>
 									</a>
-								</li>
+								</li> -->
 							</ul>
 						</li>
 					<?php endif; ?>
@@ -194,7 +194,7 @@ $status_wise_courses = $this->crud_model->get_status_wise_courses();
 			</li>
 		<?php endif; ?>
 
-		<?php if (addon_status('offline_payment')) : ?>
+		<!-- <?php if (addon_status('offline_payment')) : ?>
 			<li class="side-nav-item">
 				<a href="javascript: void(0);" class="side-nav-link <?php if ($page_name == 'offline_payment_pending' || $page_name == 'offline_payment_approve' || $page_name == 'offline_payment_suspended') : ?> active <?php endif; ?>">
 					<i class="dripicons-box"></i>
@@ -216,16 +216,16 @@ $status_wise_courses = $this->crud_model->get_status_wise_courses();
 					</li>
 				</ul>
 			</li>
-		<?php endif; ?>
+		<?php endif; ?> -->
 
-		<?php if (has_permission('messaging')) : ?>
+		<!-- <?php if (has_permission('messaging')) : ?>
 			<li class="side-nav-item">
 				<a href="<?php echo site_url('admin/message'); ?>" class="side-nav-link <?php if ($page_name == 'message' || $page_name == 'message_new' || $page_name == 'message_read') echo 'active'; ?>">
 					<i class="dripicons-message"></i>
 					<span><?php echo get_phrase('message'); ?></span>
 				</a>
 			</li>
-		<?php endif; ?>
+		<?php endif; ?> -->
 
 
 		<?php if (addon_status('customer_support')) : ?>
@@ -252,7 +252,7 @@ $status_wise_courses = $this->crud_model->get_status_wise_courses();
 			</li>
 		<?php endif; ?>
 
-		<?php if (has_permission('addon')) : ?>
+		<!-- <?php if (has_permission('addon')) : ?>
 			<li class="side-nav-item">
 				<a href="<?php echo site_url('admin/addon'); ?>" class="side-nav-link <?php if ($page_name == 'addons' || $page_name == 'addon_add' || $page_name == 'available_addons') : ?> active <?php endif; ?>">
 					<i class="dripicons-graph-pie"></i>
@@ -318,7 +318,7 @@ $status_wise_courses = $this->crud_model->get_status_wise_courses();
 					</li>
 				</ul>
 			</li>
-		<?php endif; ?>
+		<?php endif; ?> -->
 
 		<li class="side-nav-item <?php if ($page_name == 'manage_profile') echo 'active'; ?>">
 			<a href="<?php echo site_url(strtolower($this->session->userdata('role')) . '/manage_profile'); ?>" class="side-nav-link">

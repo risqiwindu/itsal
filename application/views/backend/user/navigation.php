@@ -30,7 +30,7 @@ $status_wise_courses = $this->crud_model->get_status_wise_courses();
 					<span><?php echo get_phrase('course_manager'); ?></span>
 				</a>
 			</li>
-			<li class="side-nav-item">
+			<!-- <li class="side-nav-item">
 				<a href="<?php echo site_url('user/sales_report'); ?>" class="side-nav-link <?php if ($page_name == 'report' || $page_name == 'invoice') echo 'active'; ?>">
 					<i class="dripicons-to-do"></i>
 					<span><?php echo get_phrase('sales_report'); ?></span>
@@ -47,21 +47,21 @@ $status_wise_courses = $this->crud_model->get_status_wise_courses();
 					<i class="dripicons-gear"></i>
 					<span><?php echo get_phrase('payout_settings'); ?></span>
 				</a>
-			</li>
+			</li> -->
 		<?php else : ?>
-			<li class="side-nav-item">
+			<!-- <li class="side-nav-item">
 				<a href="<?php echo site_url('user/become_an_instructor'); ?>" class="side-nav-link <?php if ($page_name == 'become_an_instructor') echo 'active'; ?>">
 					<i class="dripicons-archive"></i>
 					<span><?php echo get_phrase('become_an_instructor'); ?></span>
 				</a>
-			</li>
+			</li> -->
 		<?php endif; ?>
-		<li class="side-nav-item">
+		<!-- <li class="side-nav-item">
 			<a href="<?php echo site_url('home/my_messages'); ?>" class="side-nav-link">
 				<i class="dripicons-mail"></i>
 				<span><?php echo get_phrase('message'); ?></span>
 			</a>
-		</li>
+		</li> -->
 
 		<?php if (addon_status('customer_support')) : ?>
 			<li class="side-nav-item <?php if ($page_name == 'tickets' || $page_name == 'create_ticket') : ?> active <?php endif; ?>">

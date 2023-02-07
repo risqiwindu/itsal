@@ -38,7 +38,7 @@
                         </a>
                     </div>
 
-                    <div class="col-sm-6 col-xl-3">
+                    <!-- <div class="col-sm-6 col-xl-3">
                         <a href="<?php echo site_url('admin/courses'); ?>" class="text-secondary">
                             <div class="card shadow-none m-0 border-left">
                                 <div class="card-body text-center">
@@ -60,7 +60,7 @@
                                 </div>
                             </div>
                         </a>
-                    </div>
+                    </div> -->
 
                 </div> <!-- end row -->
             </div>

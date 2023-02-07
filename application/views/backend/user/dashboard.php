@@ -21,7 +21,7 @@
     </div><!-- end col-->
 </div>
 
-<div class="row">
+<!-- <div class="row">
     <div class="col-xl-12">
         <div class="card">
             <div class="card-body">
@@ -29,10 +29,10 @@
                 <div class="mt-3 chartjs-chart" style="height: 320px;">
                     <canvas id="task-area-chart"></canvas>
                 </div>
-            </div> <!-- end card body-->
-        </div> <!-- end card -->
-    </div><!-- end col-->
-</div>
+            </div>
+        </div>
+    </div>
+</div> -->
 
 <div class="row">
     <div class="col-12">
@@ -61,7 +61,7 @@
                         </div>
                     </div>
 
-                    <div class="col-sm-6 col-xl-3">
+                    <!-- <div class="col-sm-6 col-xl-3">
                         <a href="<?php echo site_url('user/payout_report'); ?>" class="text-secondary">
                             <div class="card shadow-none m-0 border-left">
                                 <div class="card-body text-center">
@@ -83,14 +83,14 @@
                                 </div>
                             </div>
                         </a>
-                    </div>
+                    </div> -->
 
                 </div> <!-- end row -->
             </div>
         </div> <!-- end card-box-->
     </div> <!-- end col-->
 </div>
-<div class="row">
+<!-- <div class="row">
     <div class="col-xl-12">
         <div class="card">
             <div class="card-body">
@@ -117,4 +117,4 @@
             </div>
         </div>
     </div>
-</div>
+</div> -->

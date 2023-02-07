@@ -65,7 +65,7 @@
                         </a>
                     </div>
 
-                    <div class="col">
+                    <!-- <div class="col">
                         <a href="<?php echo site_url('user/courses'); ?>" class="text-secondary">
                             <div class="card shadow-none m-0 border-left">
                                 <div class="card-body text-center">
@@ -87,7 +87,7 @@
                                 </div>
                             </div>
                         </a>
-                    </div>
+                    </div> -->
 
                 </div> <!-- end row -->
             </div>
