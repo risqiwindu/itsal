@@ -31,7 +31,7 @@
                   <div class="user-dashboard-content w-100 login-form">
                       <div class="content-title-box">
                           <div class="title"><?php echo site_phrase('login'); ?></div>
-                          <!-- <div class="subtitle"><?php echo site_phrase('provide_your_valid_login_credentials'); ?>.</div> -->
+                          <div class="subtitle"><?php echo site_phrase('provide_your_valid_login_credentials'); ?>.</div>
                       </div>
                       <form action="<?php echo site_url('login/validate_login/user'); ?>" method="post" id="login">
                           <div class="content-box">
@@ -54,13 +54,13 @@
                           <div class="content-update-box">
                                 <button class="btn" type="submit"><?php echo site_phrase('login'); ?></button>
                           </div>
-                          <!-- <div class="forgot-pass text-center">
+                          <div class="forgot-pass text-center">
                               <span><?php echo site_phrase('or'); ?></span>
                               <a href="javascript::" onclick="toggoleForm('forgot_password')"><?php echo site_phrase('forgot_password'); ?></a>
                           </div>
                           <div class="account-have text-center">
                               <?php echo site_phrase('do_not_have_an_account'); ?>? <a href="javascript::" onclick="toggoleForm('registration')"><?php echo site_phrase('sign_up'); ?></a>
-                          </div> -->
+                          </div>
                       </form>
                   </div>
                   <div class="user-dashboard-content w-100 register-form hidden">
